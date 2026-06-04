@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre de la note *"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:inputType="textCapSentences"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/etDialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:hint="Contenu de la note…"
+        android:gravity="top"
+        android:inputType="textMultiLine|textCapSentences"
+        android:background="@drawable/bg_content_field" />
+
+    <!-- Compteur de mots live -->
+    <TextView
+        android:id="@+id/tvLiveWordCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="0 mot"
+        android:textSize="11sp"
+        android:textColor="#9B8BF4"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catégorie"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priorité"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <Spinner
+        android:id="@+id/spinnerPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
